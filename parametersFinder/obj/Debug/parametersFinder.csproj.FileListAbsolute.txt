@@ -1,0 +1,30 @@
+C:\Users\sienk\OneDrive\Informatyka\C++\lekcje marcinowskie\parametersFinder\parametersFinder\bin\Debug\parametersFinder.exe.config
+C:\Users\sienk\OneDrive\Informatyka\C++\lekcje marcinowskie\parametersFinder\parametersFinder\bin\Debug\parametersFinder.exe
+C:\Users\sienk\OneDrive\Informatyka\C++\lekcje marcinowskie\parametersFinder\parametersFinder\bin\Debug\parametersFinder.pdb
+C:\Users\sienk\OneDrive\Informatyka\C++\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.csprojAssemblyReference.cache
+C:\Users\sienk\OneDrive\Informatyka\C++\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.Form1.resources
+C:\Users\sienk\OneDrive\Informatyka\C++\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.Properties.Resources.resources
+C:\Users\sienk\OneDrive\Informatyka\C++\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.csproj.GenerateResource.cache
+C:\Users\sienk\OneDrive\Informatyka\C++\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.csproj.CoreCompileInputs.cache
+C:\Users\sienk\OneDrive\Informatyka\C++\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.exe
+C:\Users\sienk\OneDrive\Informatyka\C++\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.pdb
+C:\Users\sienk\OneDrive\Informatyka\lekcje marcinowskie\parametersFinder\parametersFinder\bin\Debug\parametersFinder.exe.config
+C:\Users\sienk\OneDrive\Informatyka\lekcje marcinowskie\parametersFinder\parametersFinder\bin\Debug\parametersFinder.exe
+C:\Users\sienk\OneDrive\Informatyka\lekcje marcinowskie\parametersFinder\parametersFinder\bin\Debug\parametersFinder.pdb
+C:\Users\sienk\OneDrive\Informatyka\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.csprojAssemblyReference.cache
+C:\Users\sienk\OneDrive\Informatyka\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.Form1.resources
+C:\Users\sienk\OneDrive\Informatyka\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.Properties.Resources.resources
+C:\Users\sienk\OneDrive\Informatyka\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.csproj.GenerateResource.cache
+C:\Users\sienk\OneDrive\Informatyka\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.csproj.CoreCompileInputs.cache
+C:\Users\sienk\OneDrive\Informatyka\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.exe
+C:\Users\sienk\OneDrive\Informatyka\lekcje marcinowskie\parametersFinder\parametersFinder\obj\Debug\parametersFinder.pdb
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\bin\Debug\parametersFinder.exe.config
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\bin\Debug\parametersFinder.exe
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\bin\Debug\parametersFinder.pdb
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.csprojAssemblyReference.cache
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.Form1.resources
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.Properties.Resources.resources
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.csproj.GenerateResource.cache
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.csproj.CoreCompileInputs.cache
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.exe
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.pdb
