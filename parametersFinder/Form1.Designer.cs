@@ -47,11 +47,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.accuracy = new System.Windows.Forms.Label();
-            this.percentage = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.mutationRate = new System.Windows.Forms.TrackBar();
             this.mutationRatePercentage = new System.Windows.Forms.Label();
+            this.reset = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.mutationRate)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,27 +145,27 @@
             this.parent_a.AutoSize = true;
             this.parent_a.Location = new System.Drawing.Point(83, 159);
             this.parent_a.Name = "parent_a";
-            this.parent_a.Size = new System.Drawing.Size(58, 17);
+            this.parent_a.Size = new System.Drawing.Size(13, 17);
             this.parent_a.TabIndex = 10;
-            this.parent_a.Text = "----------";
+            this.parent_a.Text = "-";
             // 
             // parent_b
             // 
             this.parent_b.AutoSize = true;
             this.parent_b.Location = new System.Drawing.Point(83, 176);
             this.parent_b.Name = "parent_b";
-            this.parent_b.Size = new System.Drawing.Size(58, 17);
+            this.parent_b.Size = new System.Drawing.Size(13, 17);
             this.parent_b.TabIndex = 11;
-            this.parent_b.Text = "----------";
+            this.parent_b.Text = "-";
             // 
             // parent_c
             // 
             this.parent_c.AutoSize = true;
             this.parent_c.Location = new System.Drawing.Point(83, 193);
             this.parent_c.Name = "parent_c";
-            this.parent_c.Size = new System.Drawing.Size(58, 17);
+            this.parent_c.Size = new System.Drawing.Size(13, 17);
             this.parent_c.TabIndex = 12;
-            this.parent_c.Text = "----------";
+            this.parent_c.Text = "-";
             // 
             // label6
             // 
@@ -207,27 +208,9 @@
             this.accuracy.AutoSize = true;
             this.accuracy.Location = new System.Drawing.Point(83, 210);
             this.accuracy.Name = "accuracy";
-            this.accuracy.Size = new System.Drawing.Size(58, 17);
+            this.accuracy.Size = new System.Drawing.Size(13, 17);
             this.accuracy.TabIndex = 17;
-            this.accuracy.Text = "----------";
-            // 
-            // percentage
-            // 
-            this.percentage.AutoSize = true;
-            this.percentage.Location = new System.Drawing.Point(7, 227);
-            this.percentage.Name = "percentage";
-            this.percentage.Size = new System.Drawing.Size(141, 17);
-            this.percentage.TabIndex = 18;
-            this.percentage.Text = "accuracy percentage";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(154, 227);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 17);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "----------";
+            this.accuracy.Text = "-";
             // 
             // label10
             // 
@@ -259,16 +242,46 @@
             this.mutationRatePercentage.Text = "10 %";
             this.mutationRatePercentage.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // reset
+            // 
+            this.reset.Enabled = false;
+            this.reset.Location = new System.Drawing.Point(115, 122);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(75, 30);
+            this.reset.TabIndex = 25;
+            this.reset.Text = "reset";
+            this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(154, 71);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(28, 17);
+            this.label11.TabIndex = 26;
+            this.label11.Text = "= 0";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(154, 97);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(28, 17);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "= 0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1193, 284);
+            this.ClientSize = new System.Drawing.Size(1193, 237);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.reset);
             this.Controls.Add(this.mutationRatePercentage);
             this.Controls.Add(this.mutationRate);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.percentage);
             this.Controls.Add(this.accuracy);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -317,11 +330,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label accuracy;
-        private System.Windows.Forms.Label percentage;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TrackBar mutationRate;
         private System.Windows.Forms.Label mutationRatePercentage;
+        private System.Windows.Forms.Button reset;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
 

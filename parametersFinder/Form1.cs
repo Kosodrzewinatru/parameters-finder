@@ -20,8 +20,19 @@ namespace parametersFinder
 
         private void go_Click(object sender, EventArgs e)
         {
-            inside = new Inside(Convert.ToInt32(memNum.Text));
-            refresh.Enabled = true;
+            if (parent_a.Text == "-" || go.Text == "Continue")
+            {
+                inside = new Inside(Convert.ToInt32(memNum.Text));
+                refresh.Enabled = true;
+                reset.Enabled = true;
+                go.Text = "pause";
+            }
+            else
+            {
+                refresh.Enabled = false;
+                go.Enabled = true;
+                go.Text = "Continue";
+            }
         }
 
         private void refresh_Tick(object sender, EventArgs e)
@@ -33,12 +44,23 @@ namespace parametersFinder
             parent_b.Text = Convert.ToString(inside.FirstParent.b);
             parent_c.Text = Convert.ToString(inside.FirstParent.c);
             accuracy.Text = Convert.ToString(inside.FirstParent.fitness * -1);
-            //percentage.Text = Convert.ToString(inside.FirstParent.fitness * -1)
         }
 
         private void mutationRate_ValueChanged(object sender, EventArgs e)
         {
             mutationRatePercentage.Text = Convert.ToString(mutationRate.Value) + " %";
+        }
+
+        private void reset_Click(object sender, EventArgs e)
+        {
+            refresh.Enabled = false;
+            parent_a.Text = "-";
+            parent_b.Text = "-";
+            parent_c.Text = "-";
+            accuracy.Text = "-";
+            reset.Enabled = false;
+            go.Text = "Let's go!";
+            inside = new Inside(Convert.ToInt32(memNum.Text));
         }
     }
 }
