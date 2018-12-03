@@ -53,6 +53,7 @@
             this.reset = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.derivative = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mutationRate)).BeginInit();
             this.SuspendLayout();
             // 
@@ -271,11 +272,23 @@
             this.label12.TabIndex = 27;
             this.label12.Text = "= 0";
             // 
+            // derivative
+            // 
+            this.derivative.Enabled = false;
+            this.derivative.Location = new System.Drawing.Point(196, 122);
+            this.derivative.Name = "derivative";
+            this.derivative.Size = new System.Drawing.Size(80, 30);
+            this.derivative.TabIndex = 28;
+            this.derivative.Text = "derivative";
+            this.derivative.UseVisualStyleBackColor = true;
+            this.derivative.Click += new System.EventHandler(this.derivative_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1193, 237);
+            this.ClientSize = new System.Drawing.Size(1193, 232);
+            this.Controls.Add(this.derivative);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.reset);
@@ -336,6 +349,7 @@
         private System.Windows.Forms.Button reset;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button derivative;
     }
 }
 

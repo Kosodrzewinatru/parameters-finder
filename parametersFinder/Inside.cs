@@ -63,7 +63,7 @@ namespace parametersFinder
                 if (population[i].fitness > fp)
                 {
                     fp = population[i].fitness;
-                    firstParent = population[i];
+                    firstParent = population[i].Clone();
                 }
             }
 
@@ -74,7 +74,7 @@ namespace parametersFinder
                     if (population[i].fitness > sp)
                     {
                         sp = population[i].fitness;
-                        secondParent = population[i];
+                        secondParent = population[i].Clone();
                     }
                 }
             }

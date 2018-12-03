@@ -26,12 +26,14 @@ namespace parametersFinder
                 refresh.Enabled = true;
                 reset.Enabled = true;
                 go.Text = "pause";
+                derivative.Enabled = false;
             }
             else
             {
                 refresh.Enabled = false;
                 go.Enabled = true;
                 go.Text = "Continue";
+                derivative.Enabled = true;
             }
         }
 
@@ -61,6 +63,13 @@ namespace parametersFinder
             reset.Enabled = false;
             go.Text = "Let's go!";
             inside = new Inside(Convert.ToInt32(memNum.Text));
+            derivative.Enabled = false;
+        }
+
+        private void derivative_Click(object sender, EventArgs e)
+        {
+            Derivative der = new Derivative();
+            der.ShowDialog();
         }
     }
 }

@@ -28,3 +28,4 @@ C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\para
 C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.csproj.CoreCompileInputs.cache
 C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.exe
 C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.pdb
+C:\Users\sienk\Documents\github\parametersFinder\parametersFinder\obj\Debug\parametersFinder.Derivative.resources
