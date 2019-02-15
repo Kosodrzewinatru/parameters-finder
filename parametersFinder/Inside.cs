@@ -14,6 +14,7 @@ namespace parametersFinder
         private Member firstParent;
 
         internal Member FirstParent { get => firstParent; }
+        public int generationNumber = 0;
 
         public Inside(int n)
         {
@@ -80,6 +81,65 @@ namespace parametersFinder
             }
         }
 
+        public void FindParentsCamembert()
+        {
+            Random rnd = new Random();
+            List<Member> copy = new List<Member>();
+            Range[] cheese = new Range[population.Length];
+            double sum = new double();
+
+            for (int i = 0; i < population.Length; i++)
+            {
+                sum += population[i].fitness;
+                copy.Add(population[i]);
+            }
+
+            for (int i = 0; i < cheese.Length; i++)
+            {
+                cheese[i] = new Range();
+                copy[i].fitness = Math.Pow(copy[i].fitness, 2);
+                if (i == 0)
+                {
+                    cheese[i].beginning = 0;
+                    cheese[i].end = copy[i].fitness;
+                }
+                else
+                {
+                    cheese[i].beginning = cheese[i - 1].end + 1;
+                    cheese[i].end = copy[i].fitness;
+                }
+            }
+
+            Range previous = new Range();
+            double pointer = rnd.NextDouble() * (sum + 1) * -1;
+            for (int i = 0; i < cheese.Length; i++)
+            {
+                if (pointer <= cheese[i].beginning && pointer >= cheese[i].end)
+                {
+                    firstParent = copy[i].Clone();
+                    previous = cheese[i].Clone();
+                }
+            }
+
+            pointer = rnd.NextDouble() * (sum + 1) * -1;
+            for (int i = 0; i < cheese.Length; i++)
+            {
+                if (!(pointer <= previous.beginning) && !(pointer >= previous.end))
+                {
+                    if (pointer <= cheese[i].beginning && pointer >= cheese[i].end)
+                    {
+                        secondParent = copy[i].Clone();
+                        break;
+                    }
+                }
+                else
+                {
+                    pointer = rnd.NextDouble() * (sum + 1) * -1;
+                    i = 0;
+                }
+            }
+        }
+
         public void NextGen(double m)
         {
             Random rnd = new Random();
@@ -96,6 +156,8 @@ namespace parametersFinder
                 if (rnd.NextDouble() <= m)
                     population[i].c += (rnd.NextDouble() * 0.6 - 0.3);
             }
+
+            generationNumber++;
         }
     }
 }

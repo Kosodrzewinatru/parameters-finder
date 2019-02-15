@@ -40,12 +40,16 @@ namespace parametersFinder
         private void refresh_Tick(object sender, EventArgs e)
         {
             inside.CalcFitness(Convert.ToDouble(x1.Text), Convert.ToDouble(x2.Text));
-            inside.FindParents();
+            if (classicFinder.Checked == true)
+                inside.FindParents();
+            else if (camembertFinder.Checked == true)
+                inside.FindParentsCamembert();
             inside.NextGen(mutationRate.Value / 100.0);
             parent_a.Text = Convert.ToString(inside.FirstParent.a);
             parent_b.Text = Convert.ToString(inside.FirstParent.b);
             parent_c.Text = Convert.ToString(inside.FirstParent.c);
             accuracy.Text = Convert.ToString(inside.FirstParent.fitness * -1);
+            genNum.Text = Convert.ToString(inside.generationNumber);
         }
 
         private void mutationRate_ValueChanged(object sender, EventArgs e)
@@ -64,6 +68,7 @@ namespace parametersFinder
             go.Text = "Let's go!";
             inside = new Inside(Convert.ToInt32(memNum.Text));
             derivative.Enabled = false;
+            genNum.Text = "";
         }
 
         private void derivative_Click(object sender, EventArgs e)
